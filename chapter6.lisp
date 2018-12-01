@@ -1,0 +1,5 @@
+(defvar *x* 10)
+(defun foo() (format t "X: ~d~%" *x*))
+(foo)
+(let ((*x* 20))
+  (foo))
